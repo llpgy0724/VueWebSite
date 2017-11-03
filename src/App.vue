@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Loader :isshow="getShowLoading" loaderbackground="rgba(0,0,0,0.3)"></Loader>
+    <fixedbg></fixedbg>
   </div>
 </template>
 
 <script>
-import Loader from './components/common/loader/loader'
-
+//import loader from './components/common/loader/loader'
+import fixedbg from './components/common/fixedbg/fixedbg'
 export default {
   name: 'app',
   data () {
@@ -15,7 +15,8 @@ export default {
     }
   },
   components: {
-    Loader
+    //loader
+    fixedbg
   }
 }
 </script>
